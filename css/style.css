@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'Stolzl';
+  src: local('Stolzl Book'), local('Stolzl-Book'), url('../fonts/Stolzl-Book.eot') format('eot'), url('../fonts/Stolzl-Book.woff2') format('woff2'), url('../fonts/Stolzl-Book.woff') format('woff'), url('../fonts/Stolzl-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stolzl';
+  src: local('Stolzl Regular'), local('Stolzl-Regular'), url('../fonts/Stolzl-Regular.eot') format('eot'), url('../fonts/Stolzl-Regular.woff2') format('woff2'), url('../fonts/Stolzl-Regular.woff') format('woff'), url('../fonts/Stolzl-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stolzl';
+  src: local('Stolzl Medium'), local('Stolzl-Medium'), url('../fonts/Stolzl-Medium.eot') format('eot'), url('../fonts/Stolzl-Medium.woff2') format('woff2'), url('../fonts/Stolzl-Medium.woff') format('woff'), url('../fonts/Stolzl-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+html {
+  font-size: 10px;
+}
+body {
+  /* p/14r */
+  font-family: Stolzl;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.container {
+  max-width: 133.6rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 32px;
+}
+button {
+  border-radius: 1rem;
+}
+.header {
+  padding: 2.4rem 0 4rem;
+}
+.header__top,
+.header__list,
+.header__contacts {
+  display: flex;
+}
+.header__top {
+  justify-content: space-between;
+  padding-bottom: 2.4rem;
+}
+.header__list-link,
+.header__cont > a {
+  color: #333;
+}
+.header__list-item + .header__list-item {
+  margin-left: 2.4rem;
+}
+.header__cont + .header__cont {
+  margin-left: 3.2rem;
+}
+.header__cont-img {
+  margin-right: 1.6rem;
+}
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__bottom-btn {
+  display: block;
+  height: 4.1rem;
+  padding: 1rem 2.5rem;
+  background-color: #0063B0;
+  color: #fff;
+  line-height: 1.4rem;
+}
+.header__bottom .enter-text {
+  display: flex;
+  align-items: center;
+}
+.header__bottom .enter-text .enter {
+  display: block;
+  padding: 1rem 0 1rem 2rem;
+  width: 59.6rem;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+}
+.header__bottom .enter-text .look {
+  background-color: #84C0EA;
+}
+.header__bottom-icons {
+  display: flex;
+}
+.header__bottom-icons .like,
+.header__bottom-icons .basket {
+  display: flex;
+  align-items: center;
+}
+.header__bottom-icons .count {
+  margin-left: 1rem;
+}
+.header__bottom-icons .like {
+  margin-left: 2.5rem;
+}
+.main .viverra {
+  background: linear-gradient(180deg, #AAADB2 0%, #C8C9CB 100%);
+  display: flex;
+  justify-content: space-between;
+}
+.main .viverra__left {
+  padding: 8.8rem 10rem;
+  color: #fff;
+}
+.main .viverra__left-title {
+  width: 42.9rem;
+  margin-bottom: 3rem;
+}
+.main .viverra__left-list {
+  margin-bottom: 4.3rem;
+}
+.main .viverra__left-list-item {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  padding-left: 2.8rem;
+  background: url(../img/icon-list.svg) no-repeat left center;
+}
+.main .viverra__left-btn {
+  background-color: #0063B0;
+  padding: 1.5rem 3rem;
+}
+.main .viverra__right {
+  padding-right: 7.2rem;
+}
+.main .brands {
+  padding: 12rem 0 15rem;
+  display: grid;
+  grid-template-areas: "all bio ydn seiler" "all univet nouvag gamma";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+.main .brands__item-img {
+  height: 100%;
+}
+.main .brands .all {
+  grid-area: all;
+}
+.main .brands .all-content {
+  display: flex;
+  align-items: center;
+}
+.main .brands .all-content h3 {
+  font-size: 2.4rem;
+  margin-right: 2.5rem;
+}
+.main .brands .all-content * {
+  display: inline-block;
+}
+.main .brands .bio {
+  grid-area: bio;
+}
+.main .brands .ydn {
+  grid-area: ydn;
+}
+.main .brands .seiler {
+  grid-area: seiler;
+}
+.main .brands .univet {
+  grid-area: univet;
+}
+.main .brands .nouvag {
+  grid-area: nouvag;
+}
+.main .brands .gamma {
+  grid-area: gamma;
+}
+.main .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2);
+  gap: 2.4rem;
+}
+.main .cards__card {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+.main .cards__card h4 {
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+}
+.main .cards__card ul {
+  flex: 1 1 auto;
+}
+.main .cards__card ul li {
+  background: url(../img/card-list.svg) no-repeat left center;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.main .cards__card button {
+  background-color: #0063B0;
+  padding: 1rem 2.5rem;
+}
+.main .cards__card:first-child {
+  background-color: #F98C23;
+}
+.main .cards__card:nth-child(2) {
+  background-color: #AE8EB5;
+}
+.main .cards__card:nth-child(3) {
+  background-color: #E74F4E;
+}
+.main .cards__card:nth-child(4) {
+  background-color: #91B450;
+}
+.main .cards__card:nth-child(5) {
+  background-color: #EFB434;
+}
+.main .cards__card:nth-child(6) {
+  background-color: #0090B5;
+}
+.main .cards__card:nth-child(7) {
+  background-color: #8467CA;
+}
+.main .cards__card:last-child {
+  background-color: #C39440;
+}
