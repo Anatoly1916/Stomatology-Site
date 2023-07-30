@@ -36,7 +36,10 @@ h2 {
   font-size: 32px;
 }
 button {
+  padding: 1rem 2.5rem;
   border-radius: 1rem;
+  background-color: #0063B0;
+  color: #fff;
 }
 .header {
   padding: 2.4rem 0 4rem;
@@ -71,9 +74,6 @@ button {
 .header__bottom-btn {
   display: block;
   height: 4.1rem;
-  padding: 1rem 2.5rem;
-  background-color: #0063B0;
-  color: #fff;
   line-height: 1.4rem;
 }
 .header__bottom .enter-text {
@@ -88,7 +88,11 @@ button {
   border: 1px solid rgba(51, 51, 51, 0.3);
 }
 .header__bottom .enter-text .look {
+  display: inline-block;
+  border-radius: 0 1rem 1rem 0;
   background-color: #84C0EA;
+  width: 4rem;
+  height: 4rem;
 }
 .header__bottom-icons {
   display: flex;
@@ -127,7 +131,6 @@ button {
   background: url(../img/icon-list.svg) no-repeat left center;
 }
 .main .viverra__left-btn {
-  background-color: #0063B0;
   padding: 1.5rem 3rem;
 }
 .main .viverra__right {
@@ -147,11 +150,11 @@ button {
 .main .brands .all {
   grid-area: all;
 }
-.main .brands .all-content {
+.main .brands .all .title-arrow {
   display: flex;
   align-items: center;
 }
-.main .brands .all-content h3 {
+.main .brands .all .title-arrow h3 {
   font-size: 2.4rem;
   margin-right: 2.5rem;
 }
@@ -201,10 +204,6 @@ button {
   padding-left: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.main .cards__card button {
-  background-color: #0063B0;
-  padding: 1rem 2.5rem;
-}
 .main .cards__card:first-child {
   background-color: #F98C23;
 }
@@ -228,4 +227,86 @@ button {
 }
 .main .cards__card:last-child {
   background-color: #C39440;
+}
+.main .popular {
+  padding: 14.4rem 0 15rem;
+}
+.main .popular__title-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9rem;
+}
+.main .popular__title-icon h2 {
+  margin-right: 2.5rem;
+}
+.main .popular__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+}
+.main .popular__card {
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+}
+.main .popular__img {
+  margin-bottom: 4rem;
+}
+.main .popular__text,
+.main .popular__price {
+  margin-bottom: 1.5rem;
+}
+.main .popular__price {
+  font-size: 2.1rem;
+}
+.main .about {
+  display: flex;
+  justify-content: space-between;
+}
+.main .about__left {
+  padding: 4rem 0;
+  max-width: 74.8rem;
+  font-size: 1.6rem;
+}
+.main .about__text + p {
+  margin-top: 2rem;
+}
+.main .about__right {
+  max-width: 41.6rem;
+  padding: 0 4rem;
+  text-align: center;
+}
+.main .about__pic {
+  margin-bottom: 4rem;
+}
+.main .news {
+  padding: 15rem 0 12rem;
+}
+.main .news__title-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9rem;
+}
+.main .news__title-icon h2 {
+  margin-right: 2.5rem;
+}
+.main .news__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+}
+.main .news__card {
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+}
+.main .news__img {
+  margin-bottom: 4rem;
+}
+.main .news__text,
+.main .news__price {
+  margin-bottom: 1.5rem;
+}
+.main .news__price {
+  font-size: 2.1rem;
 }

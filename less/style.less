@@ -74,14 +74,17 @@ h2 {
 }
 
 button {
+    padding: 1rem 2.5rem;
     border-radius: 1rem;
+    background-color: @accent-1;
+    color: @white;
 }
 
 .header {
     padding: 2.4rem 0 4rem;
     &__top, &__list, &__contacts {
         display: flex;
-        // text-align: right;
+
     }
     &__top {
         justify-content: space-between;
@@ -106,10 +109,7 @@ button {
         align-items: center;
         &-btn {
             display: block;
-            height: 4.1rem;
-            padding: 1rem 2.5rem;
-            background-color: @accent-1;
-            color: @white;
+            height: 4.1rem;   
             line-height: 1.4rem;
         }
         .enter-text {
@@ -119,12 +119,15 @@ button {
                 display: block;
                 padding: 1rem 0 1rem 2rem;
                 width: 59.6rem;
-                // height: 2.5rem;
                 border-radius: 10px 0px 0px 10px;
                 border: 1px solid @black-03;
             }
             .look {
+                display: inline-block;
+                border-radius: 0 1rem 1rem 0;
                 background-color: @accent-2;
+                width: 4rem;
+                height: 4rem;
             }
         }
         &-icons {
@@ -166,7 +169,6 @@ button {
                 background: url(../img/icon-list.svg) no-repeat left center;
             }
             &-btn {
-                background-color: @accent-1;
                 padding: 1.5rem 3rem;
             }
         }
@@ -190,7 +192,7 @@ button {
 
         .all {
             grid-area: all;
-            &-content {
+            .title-arrow {
                 display: flex;
                 align-items: center;
                 h3 {
@@ -246,10 +248,7 @@ button {
                     margin-bottom: 1.5rem;
                 }
             }
-            button {
-                background-color: @accent-1;
-                padding: 1rem 2.5rem;
-            }
+
             &:first-child {
                 background-color: @other-category-1;
             }
@@ -277,5 +276,88 @@ button {
         }
     }
 
+    .popular {
+        padding: 14.4rem 0 15rem;
+        &__title-icon {
+            display: flex;
+            align-items: center;
+            margin-bottom: 9rem;
+            h2 {
+                margin-right: 2.5rem;
+            }
+        }
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2.4rem;
+        }
+        &__card {
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid @black-03;
+        }
+        &__img {
+            margin-bottom: 4rem;
+        }
+        &__text, &__price {
+            margin-bottom: 1.5rem;
+        }
+        &__price {
+            font-size: 2.1rem;
+        }
+
+    }
+    .about {
+        display: flex;
+        justify-content: space-between;
+        &__left {
+            padding: 4rem 0;
+            max-width: 74.8rem;
+            font-size: 1.6rem;
+        }
+        &__text + p {
+            margin-top: 2rem;
+        }
+        &__right {
+            max-width: 41.6rem;
+            padding: 0 4rem;
+            text-align: center;
+        }
+        &__pic {
+            margin-bottom: 4rem;
+        }
+
+    }
+    .news {
+        padding: 15rem 0 12rem;
+        &__title-icon {
+            display: flex;
+            align-items: center;
+            margin-bottom: 9rem;
+            h2 {
+                margin-right: 2.5rem;
+            }
+        }
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2.4rem;
+        }
+        &__card {
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid @black-03;
+        }
+        &__img {
+            margin-bottom: 4rem;
+        }
+        &__text, &__price {
+            margin-bottom: 1.5rem;
+        }
+        &__price {
+            font-size: 2.1rem;
+        }
+
+    }
 
 }
