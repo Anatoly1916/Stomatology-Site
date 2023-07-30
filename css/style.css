@@ -88,6 +88,7 @@ button {
   border: 1px solid rgba(51, 51, 51, 0.3);
 }
 .header__bottom .enter-text .look {
+  padding: 0;
   display: inline-block;
   border-radius: 0 1rem 1rem 0;
   background-color: #84C0EA;
