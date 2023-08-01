@@ -311,3 +311,51 @@ button {
 .main .news__price {
   font-size: 2.1rem;
 }
+.footer a {
+  color: #333;
+}
+.footer__content {
+  display: flex;
+  border-top: 0.1rem solid rgba(51, 51, 51, 0.3);
+  border-bottom: 0.1rem solid rgba(51, 51, 51, 0.3);
+  padding: 6rem 0;
+}
+.footer__content h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.4rem;
+}
+.footer__item:first-child {
+  margin-right: 13.5rem;
+}
+.footer__item_about {
+  flex: 0 1 19.6rem;
+}
+.footer__item_popular,
+.footer__item_contacts {
+  flex: 0 1 30.6rem;
+}
+.footer__item_contacts a {
+  padding-left: 3.6rem;
+}
+.footer__item a {
+  margin-top: 1.5rem;
+}
+.footer__item a.loc {
+  background: url(../img/location.svg) no-repeat left center;
+}
+.footer__item a.phone {
+  background: url(../img/header-images/phone.svg) no-repeat left center;
+}
+.footer__item a.mail {
+  background: url(../img/header-images/mail.svg) no-repeat left center;
+}
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}

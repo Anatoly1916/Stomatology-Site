@@ -362,3 +362,55 @@ button {
     }
 
 }
+
+.footer {
+    a {
+        color: @black;
+    }
+    &__content {
+        display: flex;
+        border-top: 0.1rem solid rgba(51, 51, 51, .3);
+        border-bottom: 0.1rem solid rgba(51, 51, 51, .3);
+        padding: 6rem 0;
+        h5 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2.4rem;
+        &:first-child {
+            margin-right: 13.5rem;
+        }
+        &_about {
+            flex: 0 1 19.6rem;
+        }
+        &_popular, &_contacts {
+            flex: 0 1 30.6rem;
+        }
+        &_contacts {
+            a {
+                padding-left: 3.6rem;
+            }
+        }
+        a {
+            margin-top: 1.5rem;
+            &.loc {
+                background: url(../img/location.svg) no-repeat left center;
+            }
+            &.phone {
+                background: url(../img/header-images/phone.svg) no-repeat left center;
+            }
+            &.mail {
+                background: url(../img/header-images/mail.svg) no-repeat left center;
+            }
+        }
+    }
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0;
+    }
+}
